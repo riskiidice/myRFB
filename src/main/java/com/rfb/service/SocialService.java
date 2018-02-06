@@ -37,6 +37,9 @@ public class SocialService {
 
     private final MailService mailService;
 
+
+    
+
     public SocialService(UsersConnectionRepository usersConnectionRepository, AuthorityRepository authorityRepository,
             PasswordEncoder passwordEncoder, UserRepository userRepository,
             MailService mailService) {

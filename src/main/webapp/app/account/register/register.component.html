@@ -73,6 +73,13 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="form-control-label" for="homeLocation">Home Location</label>
+                    <select name="homeLocation" id="" class="form-control" #homeLocation="ngModel" [(ngModel)]="registerAccount.homeLocation" required>
+                        <option [value]="null" [selected]="">Select Home Location</option>
+                        <option *ngFor="let location of locations" [value]="location.id">{{ location.locationName }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label class="form-control-label" for="password">New password</label>
                     <input type="password" class="form-control" id="password" name="password" #password="ngModel" placeholder="New password"
                             [(ngModel)]="registerAccount.password" minlength=4 maxlength=50 required>
