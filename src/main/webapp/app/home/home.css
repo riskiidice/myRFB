@@ -10,6 +10,19 @@ Main page styles
     background-size: contain;
 }
 
+.display-4 {
+    magin-top: 10px;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.events-header {
+    font-family: 'Walter Turncoat', cursive;
+}
+.hilight-wrapper {
+    background: url(http://runningforbrews.com/img/beer-light.jpg) repeat-y center center;
+    background-size: 100%;
+    padding: 100px 0 100px 0;
+}
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
